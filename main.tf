@@ -34,3 +34,9 @@ module "redis" {
   env               = terraform.workspace
   subnet_group_name = module.network.redis_subnet_group_name
 }
+module "notifications" {
+  source       = "./modules/notifications"
+  env          = terraform.workspace
+  target_email = "hafezadel599@gmail.com" 
+  state_bucket = "terraformbackendhafez"  
+}
