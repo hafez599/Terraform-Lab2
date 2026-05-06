@@ -1,0 +1,9 @@
+variable "region" {}
+variable "vpc_cidr" {}
+variable "public_cidr" {}
+variable "app_cidr" {}
+variable "db_cidr_1" {}
+variable "db_cidr_2" {}
+variable "cache_cidr_1" {}
+variable "cache_cidr_2" {}
+variable "instance_type" {}
